@@ -1,5 +1,5 @@
 # MagicaVoxel - Object merger
-A python 3 script to create a modified version of a VOX file.  The modification is to merge visible objects in all layers down to a single object while retaining animation frames.
+A python 3 script to create a modified version of a VOX file.  The modification is to merge visible objects in all layers down to a single object while maintaining animation key-frames.
 
 ---
 
