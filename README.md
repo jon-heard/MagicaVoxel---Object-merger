@@ -1,16 +1,17 @@
 # MagicaVoxel - Object merger
 A python 3 script to create a modified version of a VOX file.  The modification is to merge visible objects in all layers down to a single object while retaining animation frames.
 
-Example command-line executions:
+Example 1:
+`python objectMerger.py Alexia.vox`
 
-```
-python objectMerger.py Alexia.vox
+Example 2:
+`python objectMerger.py Alexia.vox Alexia.merged.vox`
 
-python objectMerger.py Alexia.vox Alexia.merged.vox
-```
+Both examples above have the same effect.  The second parameter is optional and represents what file to output to.  The example 2's second parameter is the same as the default (which the example 1 uses implicitly).
 
-Both examples above have the same effect.  The second parameter is optional.  The second example's second parameter is the same as the default (which the first example uses implicitly).
+==Note:== You can also drag "Alecia.vox" file onto the script in a file explorer to the same effect as example 1.
 
 These examples will load the MagicaVoxel VOX file "Alexia.vox" (which is included in this repository for demonstration purposes and has many objects in many layers and a few animation key-frames).
 
 Once "Alexia.vox" is loaded, a new file "Alexia.merged.vox" will be created.  "Alexia.merged.vox" will be a duplicate of "Alexia.vox", except that all objects in all visible layers will be flattened into a single object on the first layer.  All key-frames, both from voxels and from objects transforms, will be maintained during the merge, allowing the animations to remain intact.
+
