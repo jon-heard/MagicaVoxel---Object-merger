@@ -409,7 +409,7 @@ for i in range(len(graphNodes)):
     voxObjects.append(newVoxObject)
 
 # Sort voxobjects by layer
-voxObjects.sort(key=lambda o : o['layerId'])
+voxObjects.sort(reverse=True, key=lambda o : o['layerId'])
 
 # Collect keyframes
 keyframes = set()
@@ -420,7 +420,6 @@ for i in range(len(graphNodes)):
     if graphNodes[i]['visibility'] == False: continue
     for k in range(len(graphNodes[i]['frames'])):
         keyframes.add(graphNodes[i]['frames'][k]['frameId'])
-
 keyframes = list(keyframes)
 keyframes.sort()
 
